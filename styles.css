@@ -1,15 +1,68 @@
+:root {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: auto auto;
 }
+
+/* SIDEBAR */
 
 .sidebar {
   grid-row: 1 / 3;
+  display: grid;
+  grid-auto-rows: min-content;
+
+  background-color: #1992d4;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
 }
+
+.logo,
+.nav-1 li,
+.nav-2 li {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  gap: 20px;
+  margin: 30px;
+  font-size: 2.5rem;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.nav-1,
+.nav-2 {
+  padding: 0;
+  margin: 39px;
+  margin-top: 0;
+  list-style-type: none;
+}
+
+.nav-1 li,
+.nav-2 li {
+  gap: 31px;
+  padding: 5px 0;
+}
+
+.nav-1 li img,
+.nav-2 li img {
+  width: 30px;
+}
+
+/* HEADER */
+/* MAIN CONTENT */
 
 .main-content {
   display: grid;

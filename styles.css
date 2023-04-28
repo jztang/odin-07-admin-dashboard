@@ -7,6 +7,10 @@ body {
   font-size: 1.6rem;
 }
 
+p {
+  margin: 0;
+}
+
 .img-xlarge {
   width: 70px;
 }
@@ -26,6 +30,8 @@ body {
 .container {
   display: grid;
   grid-template-columns: auto auto;
+  grid-template-rows: min-content auto;
+  min-height: 100vh;
 }
 
 /* SIDEBAR */
@@ -69,11 +75,68 @@ body {
 }
 
 /* HEADER */
+
+.header {
+  position: relative;
+  box-shadow: 0px 5px 5px #ced3da;
+  /* height: min-content; */
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.header-top,
+.header-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: 25px;
+  padding: 10px 50px;
+}
+
+.search-bar {
+  height: 30px;
+  border: none;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 700px;
+  min-width: 100px;
+  margin-right: auto;
+  background-color: #e2e8f0;
+}
+
+.header-top p {
+  font-size: 2rem;
+}
+
+.account {
+  margin-right: auto;
+}
+
+.account-welcome {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.account-name {
+  font-size: 2.5rem;
+}
+
+.header-bottom button {
+  border: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+  background-color: #1992d4;
+  color: #fff;
+  font-weight: bold;
+}
+
 /* MAIN CONTENT */
 
 .main-content {
   display: grid;
   grid-template-columns: 4fr 1fr;
+  background-color: #e2e8f0;
 }
 
 .your-projects {

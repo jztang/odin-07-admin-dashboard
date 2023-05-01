@@ -152,6 +152,7 @@ p {
 .announcements-container {
   padding: 30px;
   border-radius: 10px;
+  box-shadow: 5px 5px 5px #ced3da;
 
   background-color: #fff;
   font-size: 1.4rem;

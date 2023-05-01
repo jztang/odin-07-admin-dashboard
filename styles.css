@@ -137,6 +137,8 @@ p {
 .main-content {
   display: grid;
   grid-template-columns: 4fr 1fr;
+  grid-template-rows: min-content auto;
+  gap: 30px;
   padding: 0 20px 20px 20px;
   background-color: #e2e8f0;
 }
@@ -145,6 +147,34 @@ p {
 
 .your-projects {
   grid-row: 1 / 3;
+}
+
+.your-projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-auto-rows: 250px;
+  gap: 25px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #ced3da;
+  background-color: #fff;
+}
+
+.project p:first-child {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.project-btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: auto 0 0 auto;
 }
 
 /* Announcements */
@@ -180,6 +210,10 @@ p {
 }
 
 /* Trending */
+
+.trending h2 {
+  margin-top: 0;
+}
 
 .trending-container {
   padding: 30px;

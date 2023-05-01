@@ -79,7 +79,7 @@ p {
 .header {
   position: relative;
   box-shadow: 0px 5px 5px #ced3da;
-  /* height: min-content; */
+
   font-weight: bold;
   white-space: nowrap;
 }
@@ -126,6 +126,7 @@ p {
   border: none;
   border-radius: 20px;
   padding: 10px 30px;
+
   background-color: #1992d4;
   color: #fff;
   font-weight: bold;
@@ -136,9 +137,45 @@ p {
 .main-content {
   display: grid;
   grid-template-columns: 4fr 1fr;
+  padding: 0 20px;
   background-color: #e2e8f0;
 }
+
+/* Your Projects */
 
 .your-projects {
   grid-row: 1 / 3;
 }
+
+/* Announcements */
+
+.announcements-container {
+  padding: 30px;
+  border-radius: 10px;
+
+  background-color: #fff;
+  font-size: 1.4rem;
+}
+
+.announcement {
+  padding: 15px 0;
+}
+
+.announcement:not(:last-child) {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.announcement:first-child {
+  padding-top: 0;
+}
+
+.announcement:last-child {
+  padding-bottom: 0;
+}
+
+.announcement-title {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Trending */

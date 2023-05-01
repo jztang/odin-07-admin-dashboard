@@ -137,7 +137,7 @@ p {
 .main-content {
   display: grid;
   grid-template-columns: 4fr 1fr;
-  padding: 0 20px;
+  padding: 0 20px 20px 20px;
   background-color: #e2e8f0;
 }
 
@@ -180,3 +180,27 @@ p {
 }
 
 /* Trending */
+
+.trending-container {
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #ced3da;
+
+  background-color: #fff;
+}
+
+.trending-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.trending-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.trending-item p:last-child {
+  margin-top: 5px;
+  font-size: 1.3rem;
+}
